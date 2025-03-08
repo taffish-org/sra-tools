@@ -1,0 +1,9 @@
++TOOL:sra-tools
+ARGS
+    <else>
+        cat ::*LOAD-DIR*::../sra-tools.info.txt
+    <main>
+        ::cmd:: ::opts::
+RUN
+    <container:taf-sra-tools-v3.2.0:ghcr.io/taffish-org/sra-tools:3.2.0>
+        ::*MAIN*::

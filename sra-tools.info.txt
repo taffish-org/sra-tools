@@ -1,0 +1,9 @@
+# <sra-tools:3.2.0 | KaiyuanHan | 2025-03-08>
+ARGS
+    <else>
+        cat ::*LOAD-DIR*::../sra-tools.info.txt
+    <main>
+        ::cmd:: ::opts::
+RUN
+    <container:taf-sra-tools-v3.2.0:ghcr.io/taffis-org/sra-tools:3.2.0>
+        ::*MAIN*::
