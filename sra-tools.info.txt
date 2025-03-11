@@ -1,9 +1,36 @@
-# <sra-tools:3.2.0 | KaiyuanHan | 2025-03-08>
+# <sra-tools:3.2.0 | KaiyuanHan | 2025-03-11>
 ARGS
     <else>
         cat ::*LOAD-DIR*::../sra-tools.info.txt
     <main>
         ::cmd:: ::opts::
+    <cmd>
+        # abi-dump
+        # align-infocache-mgr
+        # check-corrupt
+        # fasterq-dump
+        # fastq-dump
+        # illumina-dump
+        # kdbmeta
+        # ngs-pileup
+        # prefetch
+        # rcexplain
+        # ref-variation
+        # sam-dump
+        # sff-dump
+        # sra-info
+        # sra-pileup
+        # sra-search
+        # sra-stat
+        # srapath
+        # sratools
+        # test-sra
+        # var-expand
+        # vdb-config
+        # vdb-decrypt
+        # vdb-dump
+        # vdb-encrypt
+        # vdb-validate
 RUN
-    <container:taf-sra-tools-v3.2.0:ghcr.io/taffis-org/sra-tools:3.2.0>
+    <container:taf-sra-tools-v3.2.0:ghcr.io/taffish-org/sra-tools:3.2.0>
         ::*MAIN*::
